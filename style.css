@@ -1,0 +1,240 @@
+.pagina1{
+    text-align: center;
+    background-image: linear-gradient(27deg, #6C52D9 0%, #1EAAFC 85%, #3EDFD7 100%);
+    border-radius: 8px;
+    box-shadow: 1px 10px 25px rgba(80, 80, 200, 0.5); 
+}
+
+.pagina2{
+    text-align: center;
+    background-image: linear-gradient(197deg, #3DEBE2 0%, #00838f 90%); 
+    border-radius: 8px;
+    box-shadow: 1px 10px 25px rgba(0, 120, 150, 0.5);
+}
+  
+.pagina3{
+    text-align: center;
+    background-color: #1EAAFC;
+    background-image: linear-gradient(24deg, #6C52D9 0%, #ff00bb 127%);
+    border-radius: 8px;
+    box-shadow: 1px 10px 25px rgba(100, 0, 200, 0.5);
+}
+ 
+.pagina4{
+    text-align: center;
+    background-color: #1EAAFC;
+    background-image: linear-gradient(24deg, #ba6f12 0%, #fff700 127%);
+    border-radius: 8px;
+    box-shadow: 1px 10px 25px rgba(200, 100, 0, 0.5);
+}
+
+.pagina5{
+    text-align: center;
+    background-color: #1EAAFC;
+    background-image: linear-gradient(24deg, #9ca33b 0%, #45d67a 127%);
+    border-radius: 8px;
+    box-shadow: 1px 10px 25px rgba(80, 100, 0, 0.5);
+}
+  
+.pagina6{
+    text-align: center;
+    background-color: #1EAAFC;
+    background-image: linear-gradient(24deg, #690035 0%, #ff0030 107%);
+    border-radius: 8px;
+    box-shadow: 1px 10px 25px rgba(100, 0, 50, 0.5);
+}
+  
+.pagina7{
+    text-align: center;
+    background-color: #1EAAFC;
+    background-image: linear-gradient(24deg, #000 0%, #616161 127%);
+    border-radius: 8px;
+    box-shadow: 1px 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.pagina8{
+    text-align: center;
+    background-image: linear-gradient(222deg,#ff272d ,#c42482 33%,#ab217f 47%,#671878 84%,#4a1475 100%);
+    border-radius: 8px;
+    box-shadow: 1px 10px 25px rgba(100, 0, 150, 0.5);    
+}
+
+
+/*tamanho do cartao*/  
+.cartao{
+    float: left; 
+    width: 5%;
+    height: 0px;
+    padding: 5%;
+    margin-left: 1%;
+    margin-bottom: 1%;
+}
+
+/*posiçao do botao*/
+.card{
+ padding-left: 3%;
+ padding-top: 0%;
+
+}
+
+
+
+
+
+/*imagem dentro do botao*/
+.som{
+   position: inline-block;
+   float: center;
+   margin-left: -10%;
+   margin-top: -90%;
+   width: 80px;
+}
+
+
+
+.cartao:hover{
+   
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition-duration: 0.3s;  
+}
+
+
+
+
+
+
+
+
+
+*{
+   
+    font-family: 'Poppins', sans-serif;
+}
+
+/*cor de fundo do site*/
+body{
+    background: #1f242d;
+}
+
+
+/*configurações do botao*/
+a{
+    position: relative;
+    display: inline-block;
+    padding: 5px ;
+    margin: -70px;
+    text-decoration: none;
+    text-transform: uppercase;
+	 color: rgba(255, 255, 255, 1);
+    background: #262c48;
+   
+ top:140%;
+    font-size: 22px;
+    transition: 0.3s;
+  
+    border-radius:10px;
+
+}
+
+
+/*mudar a cor do botao ao passar o mouse por cima*/
+a:hover{
+    color: #00FFFF;
+    background: black;
+}
+
+a span{
+    display: block;
+    position: absolute;
+    background: white;
+}
+
+
+
+/*borda de baixo do botao*/
+a span:nth-child(1){
+    left: 0;
+    bottom: 0;
+    width: 1px;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.5s;
+}
+
+a:hover span:nth-child(1){
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition: transform 0.5s;
+}
+
+
+/*borda do lado esquedo do botao*/
+a span:nth-child(2){
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+}
+
+a:hover span:nth-child(2){
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 0.5s;
+}
+
+
+
+/*borda do lado direito do botao*/
+a span:nth-child(3){
+    right: 0;
+    bottom: 0;
+    width: 1px;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.5s;
+    transition-delay: 0.5s;
+}
+
+a:hover span:nth-child(3){
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition: transform 0.5s;
+    transition-delay: 0.5s;
+}
+
+
+/*borda de cima do botao*/
+a span:nth-child(4){
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 1px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+    transition-delay: 0.5s;
+	
+}
+
+a:hover span:nth-child(4){
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 0.5s;
+    transition-delay: 0.5s;
+}
+
+
+
+
+
+
+
+
+
